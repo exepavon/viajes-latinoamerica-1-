@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>viajes latinoamerica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/variables.js"></script>
+    <script src="js/producto.class.js"></script>
+    <script defer src="js/arrayproductos.js"></script>
+</head>
+<body data-theme="light"> 
+    <article class="container">
+        <h1>productos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>DESCRIPCION</th>
+                    <th>IMPORTE</th>
+                    <th>FINAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234</td>
+                    <td>VIAJE ARGENTINA</td>
+                    <td>1000.00</td>
+                    <td>1500.00</td>
+                </tr>
+                <tr>
+                    <td>1235</td>
+                    <td>VIAJE CHILE</td>
+                    <td>1100.00</td>
+                    <td>1800.00</td>
+                </tr>
+                <tr>
+                    <td>1236</td>
+                    <td>VIAJE PERU</td>
+                    <td>1500.00</td>
+                    <td>1600.00</td>
+                </tr>
+                <tr>
+                    <td>1237</td>
+                    <td>VIAJE COLOMBIA</td>
+                    <td>2000.00</td>
+                    <td>3000.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+            <button role="button" class="primary" onclick="listarProductos()">LISTAR PRODUCTOS</button>
+            <button role="button" class="secondary" onclick="buscarProducto()">BUSCAR PRODUCTO</button>
+            <button role="button" class="secondary" onclick="filtrarProductos()">FILTRAR PRODUCTOS</button>
+            <button role="button" class="contrast" onclick="calcularCarrito()">CALCULAR CARRITO</button>
+        </footer>
+    </article>
+</body>
+</html>
