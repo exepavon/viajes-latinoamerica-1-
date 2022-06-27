@@ -11,7 +11,6 @@ function agregarPais() {
 }
 
 function quitarPais() {
-    debugger
     let paisAquitar = prompt("Ingresa el país a quitar;")
     let indice = paises.indexOf(paisAquitar)
     let resultado = paises.splice(indice, 1)

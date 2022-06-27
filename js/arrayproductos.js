@@ -3,7 +3,6 @@ function listarProductos() {
 } 
 
 function agregarProducto() {
-    debugger
     let id = creoID()
     let nombre = prompt("Ingresa el nombre del producto:")
     let precio = parseInt(prompt("Ingresa el precio:"))
@@ -20,7 +19,6 @@ function listarProductos() {
 
 function buscarProducto() {
     let aBuscar = prompt("Ingrese el nombre del producto a buscar:").toUpperCase()
-        debugger
         
         let resultado = productos.find((producto)=> producto.nombre.includes(aBuscar))
         if (resultado !== undefined) {
@@ -40,7 +38,6 @@ function filtrarProductos() {
 
 function existeProducto() {
     let aBuscar = prompt("Ingrese el código del producto a buscar:")
-    debugger
     let resultado = productos.some((producto)=> producto.id === parseInt(aBuscar))
         if (resultado) {
             console.log("El producto existe.")
@@ -64,7 +61,6 @@ function proyectarIncremento(porc) {
 
 function calcularCarrito() {
     console.clear()
-    debugger
     let total = carrito.reduce((acc, producto)=> acc + producto.importe, 0)
         console.log("TOTAL DEL CARRITO:", total)
 }
